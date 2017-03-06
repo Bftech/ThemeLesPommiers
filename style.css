@@ -1,0 +1,190 @@
+/*
+Theme Name: Les Pommiers
+
+Author: Blue Fire Focus
+Author URI: http://www.mmirouen.fr
+Description: Thème pour le site de l'école primaire Les Pommiers de Combon
+Version: 1
+Tags: mmi, rouen, wordpress, les pommiers, blue fire focus
+*/
+
+/*
+-------------------------------------------------------------- */
+/* ruje : #ed1d24 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: grey;
+  background-image: url("img/bkg_1.png");
+  /*background-size: contain;*/
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-family: 'Pangolin', cursive;
+}
+
+#main, #menu-sec>div>ul, #content, #sidebar, #posts, #menu-sec .menu-item, .credits{
+  display:flex;
+  /*border: 2px solid #ed1d24;*/
+}
+
+#main, #posts{
+  flex-direction: column;
+}
+
+#content{
+  justify-content: space-between;
+}
+
+footer, #menu-pri>div , #menu-sec .menu-item, .post { /* .classe*/
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+
+  -moz-box-shadow: 10px 10px 15px -5px #656565;
+  -webkit-box-shadow: 10px 10px 15px -5px #656565;
+  -o-box-shadow: 10px 10px 15px -5px #656565;
+  box-shadow: 10px 10px 15px -5px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=15);
+}
+
+#main {
+  width: 80vw;
+  margin:10px auto;
+}
+
+#content{
+
+}
+
+#menu-pri {
+  width: 23%;
+  /*border: 2px solid red;*/
+}
+#menu-pri>div>ul{
+	margin:0;
+	padding:10px;
+
+	list-style-type:none;
+}
+
+#menu-sec>div>ul {
+  margin:11px 0;
+	padding:0;
+
+  justify-content: space-around;
+}
+
+#posts{
+  width: 75%;
+}
+
+header {
+  width: 45%;
+  padding: 0 10px;
+  margin: 40px 0;
+}
+
+header img{
+  height: 120px;
+}
+
+footer{
+	margin-top:15px;
+	padding:10px;
+}
+header, footer {
+  border-radius: 10px;
+}
+
+#sidebar,.credits{
+	justify-content: space-around;
+}
+
+#menu-sec .menu-item, #menu-pri .menu-item{
+  padding: 5px;
+
+  align-items: center;
+}
+
+#menu-sec .menu-item::before, #menu-pri .menu-item::before{
+	display: inline-block;
+
+	width: 30px;
+  height: 31px;
+  margin-right: 5px;
+
+  content: "";
+
+  background: url(img/pom.png) no-repeat 0 0;
+  background-size: 100%;
+}
+
+.post {
+  padding:0 15px;
+
+  text-align: justify;
+}
+.post>p{
+  font-family:sans-serif;
+}
+.post{
+  margin-bottom: 15px;
+}
+
+.date{
+  float: right;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.date p{
+  margin: 0;
+  padding: 5px;
+}
+.date img{
+  height: 30px;
+}
+.readMore{
+  float: right;
+  margin-right: 50px;
+}
+.post-categories{
+  display: inline-block;
+  list-style:none;
+  padding: 0;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited, a:link{
+	color:#1ea43f;
+}
+a:hover, .pagi a:hover{
+	color:#73b434;
+}
+.pagi a{
+  color:#f0f0f0;
+}
+#pagination{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagi-next{
+  float: right;
+}
+
+@font-face {
+    font-family: cavDB;
+    src: url('assets/CaviarDreams.ttf');
+}
