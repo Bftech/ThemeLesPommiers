@@ -4,7 +4,7 @@ get_header();
 			<div id="posts">
 
 				<article class="post">
-					<h2>Categorie : <?php the_category(); ?></h2>
+					<h2><?php the_category(); ?></h2>
 				</article>
 
 				<?php while (have_posts()) :
@@ -19,6 +19,7 @@ get_header();
 
 						<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
 						<p><?php the_excerpt();?> </p>
+						<a class="readMore" href="<?php the_permalink();?>">Lire la suite...</a>
 					</article>
 
 				<?php endwhile;?>
